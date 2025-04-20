@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: kanit;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    background-color: white;
+    height: 120px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.curve
+{
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    height: 83px;
+}
+.curve::before{
+    content: '';
+    display: block;
+    top: 2rem;
+    width: 63%;
+    position: absolute;
+    height: 83%;
+    border-radius: 100% 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(88%,-60%);
+}
+.curve::after{
+    content: '';
+    display: block;
+    width: 65%;
+    position: absolute;
+    height: 100%;
+    border-radius: 100% 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-8%,-20%);
+    z-index: 1;
+}
+#navl{
+    display: flex;
+    flex-direction: row;
+    margin-right: 15rem;
+}
+#navlist
+{
+    list-style: none;
+    height: 400px;
+}
+#listitems{
+    text-decoration: none;
+    margin-left: 3rem;
+    font-family: kanit sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+#listitems:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 7px 7px;
+}
+#logoo{
+    height: 100px;
+    width: 200px;
+    align-self: center;
+  margin-bottom: 20px;
+  margin-right: 14.5rem;
+}
+#nav2{ display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+        
+    }
+    #button{
+        margin-left: 4rem;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: none;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+    }
+
+/* first page css */
+.firstpage{
+    height: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+#img{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: -70px;
+}
+#heading{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#heading2{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#button3{
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 100px;
+background-color: black;
+color: white;    
+}
+.secondpage{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+.secsub{
+    height: 750px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.secsucb2{
+    height: 750px;
+    width: 700px;
+    background-color: white;
+}
+.cartt{
+    height: 650px;
+    width: 550px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    background-color: white;
+}
+.account{
+    height: 230px;
+    width: 800px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+    background-color: white;
+}
+.accounth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#heading4{
+    font-family: kanit;
+}
+#para{
+    font-family: kanit;
+    color: rgb(167, 165, 165);
+    margin-left: 30px;
+    position: relative;
+    top: -54px;
+}
+#img5{
+    height: 30px;
+    width: 30px;
+}
+#img4{
+    position: relative;
+    left: 460px;
+    top: 15px;
+    height: 150px;
+    width: 150px;
+}
+.buttons{
+    position: relative;
+    bottom: 40px;
+    gap: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#button4{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+}
+#button5{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+.location{
+    height: 130px;
+    width: 800px;
+    position: relative;
+    margin-top: 80px;
+    left: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.Payment{
+    height: 130px;
+    width: 800px;
+    position: relative;
+    margin-top: 30px;
+    left: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#heading2{
+    font-family: kanit;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(167, 165, 165);
+    margin-left: 10px;
+    position: relative;  
+}
+#img2{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    margin-bottom: 70px;
+}

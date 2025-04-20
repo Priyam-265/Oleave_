@@ -1,0 +1,102 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling with background image */
+  body {
+    font-family: Arial, sans-serif;
+    background: url('oo.jpg') no-repeat center center fixed; /* Replace 'background.jpg' with your image path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22, 19, 19, 0.8); /* Added transparency for a better view of the background */
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  /* Main content area */
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  /* Form container */
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and select styling */
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #101010;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0a0504;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }

@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url('cu.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    opacity: 0.4; 
+    z-index: -1; 
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.about-text p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin: 15px 0;
+    font-family: serif;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.experience div {
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    color: #000000;
+}
+
+.experience p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #000000;
+}
+.why-are-best-btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.why-are-best-btn:hover {
+    background-color: #000000;
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border: #000000;
+}
+
+.image-box {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.4s ease-in-out;   
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+.animate-img {
+    animation: fade 15s infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    background-color: white;
+    height: 120px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.curve
+{
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    height: 83px;
+}
+.curve::before{
+    content: '';
+    display: block;
+    top: 2rem;
+    width: 63%;
+    position: absolute;
+    height: 83%;
+    border-radius: 100% 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(88%,-60%);
+}
+.curve::after{
+    content: '';
+    display: block;
+    width: 65%;
+    position: absolute;
+    height: 100%;
+    border-radius: 100% 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-8%,-20%);
+    z-index: 1;
+}
+#navl{
+    display: flex;
+    flex-direction: row;
+    margin-right: 15rem;
+}
+#navlist
+{
+    list-style: none;
+    height: 400px;
+}
+#listitems{
+    text-decoration: none;
+    margin-left: 3rem;
+    font-family: kanit sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+#listitems:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 7px 7px;
+}
+#logoo{
+    height: 100px;
+    width: 200px;
+    align-self: center;
+  margin-bottom: 20px;
+  margin-right: 14.5rem;
+}
+#nav2{ display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+        
+    }
+    #button{
+        margin-left: 4rem;
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border: none;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    
+.transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    pointer-events: none;
+}
+.transition-row{
+    flex: 1;
+    display: flex;
+}
+.transition-row.row-1 .block{
+    transform-origin: top;
+}
+.transition-row.row-2 .block{
+    transform-origin: bottom;
+}
+.block{
+flex: 1;
+background-color: #bcbcc4;
+transform: scaleY(1);
+will-change: tranform;
+}

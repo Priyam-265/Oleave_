@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner Onboarding - Food Ordering Platform</title>
+  <link rel="stylesheet" href="partneronboard.css">
+</head>
+<body>
+  <header>
+    <h1>Join Our Platform as a Partner</h1>
+    <p>Fill out the form to get started and start receiving orders!</p>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <form id="partner-form" action="submitForm()">
+        <div class="form-group">
+          <label for="restaurantName">Restaurant Name:</label>
+          <input type="text" id="restaurantName" name="restaurantName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="ownerName">Owner Name:</label>
+          <input type="text" id="ownerName" name="ownerName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Restaurant Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+
+        <div class="form-group">
+          <label for="menu">Menu (Provide a link to your menu):</label>
+          <input type="url" id="menu" name="menu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="delivery">Do you offer delivery?</label>
+          <select id="delivery" name="delivery" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hours">Operating Hours:</label>
+          <input type="text" id="hours" name="hours" placeholder="e.g., 10:00 AM - 10:00 PM" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Food Delivery Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

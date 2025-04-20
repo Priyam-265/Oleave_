@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleave Help & Support</title>
+    <style>
+        /* Basic Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #010709;
+            color: rgb(237, 233, 233);
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #e8eef1;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar-item {
+            color: rgb(10, 2, 2);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar-item:hover {
+            color: #ffa726;
+        }
+
+        /* Container Layout */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            background-color: #d9e8ef;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .sidebar a:hover {
+            color: #120000;
+        }
+
+        /* Content Styling */
+        .content {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* FAQ Styling */
+        .faq {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-size: 16px;
+            color: #333;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            display: none;
+            font-size: 14px;
+            color: #555;
+            padding: 10px 0;
+            line-height: 1.6;
+        }
+
+        .faq.active .faq-answer {
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .image-container {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .faq-question {
+                font-size: 14px;
+            }
+        }
+        .faq-answer {
+    display: none;  /* Answers are hidden by default */
+    font-size: 14px;
+    color: #555;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+    </style>
+    
+<body>
+    <div class="header">
+        <h1>Oleave Help & Support</h1>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <!-- Add logo or menu items here if needed -->
+        </div>
+        <div class="navbar-right">
+            <!-- Add navbar links here if needed -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Help Topics</h2>
+            <a href="partneronboard.html">Partner Onboarding</a>
+            <a href="l.html">Legal</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+        
+        <div class="content" id="partner-onboarding">
+            <h2>Partner Onboarding</h2>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>I want to partner my restaurant with Oleave</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>To partner your restaurant with Oleave, please fill out the partnership form on our website. You will need to provide basic details about your restaurant and agree to the terms and conditions.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>What are the mandatory documents needed to list my restaurant on Oleave?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The mandatory documents required include a valid business license, proof of ownership or lease agreement, food safety certificates, and a menu with pricing.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>I want to opt out from Google Reserve</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>To opt out from Google Reserve integration, you can contact our support team via the contact form or email us directly at support@oleave.com.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>After I submit all documents, how long will it take to go live on Oleave?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Once all documents are submitted and verified, it typically takes 7-10 business days to go live on the Oleave platform.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>What is this one-time onboarding fee? Do I have to pay it while registering?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The one-time onboarding fee covers the setup and integration of your restaurant into the Oleave platform. It is typically paid during registration or when you sign the partnership agreement.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>Whom should I contact if I need help and support in getting onboarded?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>If you need help with onboarding, please reach out to our support team at support@oleave.com or contact your onboarding manager directly.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-question">
+                    <span>How much commission will I be charged by Oleave?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The commission charged by Oleave is typically a percentage of each transaction processed through the platform. Please refer to the partnership agreement for specific rates based on your restaurant's location and size.</p>
+                </div>
+            </div>
+            
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq').forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>help.js</script>
+</body>
+</html>
